@@ -2,6 +2,7 @@
 #define SHAPES_H
 
 class Shape {
+public:
 	virtual void name() = 0;
 	virtual double perimeter() = 0;
 	virtual double area() = 0;
@@ -21,7 +22,7 @@ public:
 
 class Triangle : public Shape {
 private:
-	double s1, s2, s3;		// The sides of the triangle
+	double side1, side2, side3;		// The sides of the triangle
 public:
 	Triangle(double side1, double side2, double side3);
 	void name();
